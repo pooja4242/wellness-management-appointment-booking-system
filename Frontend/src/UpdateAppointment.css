@@ -1,0 +1,96 @@
+/* Container for the appointment form */
+body {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: none;
+    padding: 0;
+    
+}
+
+.appointment-form-container {
+    max-width: 800px;
+    margin: 170px auto;
+    padding: 20px;
+    background-color: rgba(241, 238, 238, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #020202;
+}
+.logout-btn{
+    margin-top: 5px;
+    margin-left: 800px;
+    width: 100px;
+    background-color: crimson;
+}
+.appointment-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px; /* Space between columns */
+}
+
+.appointment-form .form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.appointment-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #080808;
+}
+
+.appointment-form .form-group input,
+.appointment-form .form-group select,
+.appointment-form .form-group textarea {
+    width: 330px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #090909;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Color and opacity */
+    z-index: 1;
+  }
+.appointment-form .form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-btn {
+    padding: 5px 10px; /* Smaller padding */
+    background-color: rgba(3, 10, 235, 0.6); /* Same semi-transparent background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    line-height: 1.5;
+    cursor: pointer;
+    font-size: 1em; /* Smaller font size for the button label */
+    width: 100px;
+    height: 40px; /* Auto width based on content */
+    transform: translate(320%, 4%);
+} 
+.submit-btn:hover {
+    background-color: #25218d;
+}

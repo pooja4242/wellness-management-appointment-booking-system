@@ -1,0 +1,84 @@
+
+.container.register {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; /* Align items to the start (left) */
+  align-items: center;
+  min-height: 100vh;
+ 
+  padding-left: 2rem; /* Add padding to move the content inward */
+}
+.container.register form {
+  padding: 2rem; /* Adjust padding as needed */
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0px 0px 15px rgba(73, 66, 66, 0.2);
+  max-width: 900px;
+  background-color: rgba(204, 204, 204, 0.9);
+  margin: 0;
+  opacity: 1;
+}
+
+.form-sections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+  gap: 2rem; /* Space between columns and rows */
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-section input[type="text"], 
+.form-section input[type="password"], 
+.form-section input[type="email"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #7b6060;
+  border-radius: 4px;
+  margin-bottom: 1rem; /* Space below each input field */
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
